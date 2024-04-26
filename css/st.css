@@ -1,0 +1,79 @@
+#stats-cards {
+  display: flex;
+  flex-direction: row; /* Align cards horizontally */
+  justify-content: center; /* Center cards horizontally in the container */
+  align-items: center; /* Align cards vertically */
+  padding: 10px;
+  gap: 5px;
+  flex-wrap: wrap; /* Wrap cards to the next line on smaller screens */
+}
+
+.stats-card {
+  background: hsl(240, 2%, 91%); /* Initial background color */
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background-color 0.5s; /* Transition for transform and background color */
+  width: 200px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats-card:hover {
+  transform: translateY(-10px);
+  background: #d6eaff; /* New background color on hover */
+}
+
+.stats-number {
+  font-size: 2em; /* Initial font size */
+  font-weight: bold;
+  color: #333; /* Change this to the color of your choice */
+}
+
+.stats-text {
+  color: #666; /* Change this to the color of your choice */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .stats-card {
+    width: 150px; /* Smaller width */
+    height: 120px; /* Smaller height */
+    padding: 15px;
+  }
+
+  .stats-number {
+    font-size: 1.5em; /* Smaller font size */
+  }
+
+  .stats-text {
+    font-size: 0.9em; /* Smaller font size for text */
+  }
+}
+
+/* You can add additional media queries for even smaller screens if necessary */
+@media (max-width: 480px) {
+  .stats-card {
+    width: 120px; /* Even smaller width */
+    height: 100px; /* Even smaller height */
+    padding: 10px;
+  }
+
+  .stats-number {
+    font-size: 1.2em; /* Even smaller font size */
+  }
+
+  .stats-text {
+    font-size: 0.8em; /* Even smaller font size for text */
+  }
+}
+
+
+
+
+
+  
+ 
